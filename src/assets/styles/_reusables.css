@@ -4,14 +4,19 @@
     @apply pt-24 pb-16;
   }
   .section-title {
-    @apply font-bold -tracking-tighter text-gray-900;
+    @apply font-bold text-gray-900;
   }
   .section-text {
-    @apply font-medium -tracking-tighter text-gray-600;
+    @apply font-medium text-gray-600;
   }
 
   /* container class */
   .container {
     @apply mx-auto w-[calc(100%-3rem)] max-w-[768px];
+  }
+
+  /* main class */
+  .main {
+    @apply mx-auto min-h-screen max-w-[768px] overflow-hidden bg-gray-100;
   }
 }

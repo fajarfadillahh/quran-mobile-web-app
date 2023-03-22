@@ -8,7 +8,7 @@ module.exports = {
         arabic: ["Noto Naskh Arabic", "serif"],
       },
       letterSpacing: {
-        tighter: "0.95px",
+        tighter: "0.98px",
       },
     },
   },
