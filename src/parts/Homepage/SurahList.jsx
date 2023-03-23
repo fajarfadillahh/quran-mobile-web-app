@@ -9,6 +9,8 @@ import SurahCard from "./SurahCard";
 
 const SurahList = () => {
   const [surah, setSurah] = useState([]);
+  const [filteredSurah, setFilteredSurah] = useState([]);
+  const [searchSurah, setSearchSurah] = useState("");
 
   useEffect(() => {
     getAllSurah()
@@ -20,6 +22,22 @@ const SurahList = () => {
       });
   }, []);
 
+  useEffect(() => {
+    const searched =
+      searchSurah === ""
+        ? surah
+        : surah.filter((item) =>
+            item.nama_latin.toLowerCase().includes(searchSurah.toLowerCase())
+          );
+
+    setFilteredSurah(searched);
+  }, [surah, searchSurah]);
+
+  // handle search surah by name
+  const handleSearchSurah = (event) => {
+    setSearchSurah(event.target.value);
+  };
+
   return (
     <section className="section pt-12">
       <div className="container grid gap-8">
@@ -30,12 +48,13 @@ const SurahList = () => {
           <input
             type="text"
             placeholder="Surah apa yang ingin kamu baca?"
+            onChange={handleSearchSurah}
             className="h-full w-full bg-transparent pr-6 font-bold text-gray-900 outline-none placeholder:font-semibold placeholder:text-gray-600"
           />
         </form>
 
         <div className="grid gap-4">
-          {surah?.map((surah, index) => {
+          {filteredSurah?.map((surah, index) => {
             return <SurahCard key={index} surah={surah} />;
           })}
         </div>
