@@ -15,8 +15,8 @@ const Header = () => {
   const handleScroll = () => {
     if (window.scrollY > 10) {
       setStickyHeader(true);
-      setHeaderBgColor("bg-white shadow-lg");
-      setTextColor("text-gray-900");
+      setHeaderBgColor("bg-white shadow-lg dark:bg-gray-900");
+      setTextColor("text-gray-900 dark:text-white");
     } else {
       setStickyHeader(false);
       setHeaderBgColor("bg-transparent shadow-none");
