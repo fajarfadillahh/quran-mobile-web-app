@@ -20,8 +20,6 @@ const SurahList = () => {
       });
   }, []);
 
-  console.log(surah);
-
   return (
     <section className="section pt-12">
       <div className="container grid gap-8">
