@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { RiMoonClearLine } from "react-icons/ri";
+import { RiMoonClearFill, RiSunFill } from "react-icons/ri";
+
+// import custom hooks
+import useColorMode from "../hooks/useColorMode";
 
 const Header = () => {
   const [stickyHeader, setStickyHeader] = useState(false);
   const [headerBgColor, setHeaderBgColor] = useState("bg-transparent");
   const [textColor, setTextColor] = useState("text-white");
+  const [colorMode, setColorMode] = useColorMode();
 
   // handle scrolling for sticky header
   const handleScroll = () => {
@@ -43,7 +47,7 @@ const Header = () => {
         <div
           className={`inline-flex cursor-pointer items-center gap-1 transition ${textColor}`}
         >
-          <RiMoonClearLine size="20px" />
+          <RiMoonClearFill size="20px" />
           <h3 className="text-[14px] font-bold">Dark Mode</h3>
         </div>
       </div>
