@@ -8,10 +8,12 @@ const SurahCard = ({ surah }) => {
           {surah.nomor_surah}
         </span>
 
-        <div>
-          <div className="inline-flex items-center gap-1">
-            <h3 className="section-title">{surah.nama_latin}</h3>
-            <p className="section-text text-[12px]">({surah.arti})</p>
+        <div className="max-w-[160px] overflow-hidden">
+          <div className="flex items-center gap-1">
+            <h3 className="section-title whitespace-nowrap">
+              {surah.nama_latin}
+            </h3>
+            <p className="section-text truncate text-[12px]">({surah.arti})</p>
           </div>
           <p className="section-text text-[12px]">
             Gol. Surah - {surah.jumlah_ayat} Ayat
