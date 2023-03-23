@@ -1,6 +1,9 @@
 import React from "react";
 import { RiSearchLine } from "react-icons/ri";
 
+// import parts
+import SurahCard from "./SurahCard";
+
 const SurahList = () => {
   return (
     <section className="section pt-12">
@@ -16,8 +19,8 @@ const SurahList = () => {
           />
         </form>
 
-        <div className="">
-          <h3>surah card</h3>
+        <div className="grid gap-6">
+          <SurahCard />
         </div>
       </div>
     </section>
