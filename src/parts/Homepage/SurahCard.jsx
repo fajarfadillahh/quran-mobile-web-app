@@ -2,7 +2,7 @@ import React from "react";
 
 const SurahCard = () => {
   return (
-    <div className="flex h-[72px] items-center justify-between rounded-md bg-white px-4 shadow-lg transition hover:ring-2 hover:ring-green-600">
+    <div className="flex min-h-[72px] items-center justify-between rounded-md bg-white px-4 shadow-lg transition hover:ring-2 hover:ring-green-600">
       <div className="inline-flex items-center gap-4">
         <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-green-600 font-bold text-white">
           1

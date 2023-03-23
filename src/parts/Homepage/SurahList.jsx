@@ -19,7 +19,7 @@ const SurahList = () => {
           />
         </form>
 
-        <div className="grid gap-6">
+        <div className="grid gap-4">
           <SurahCard />
         </div>
       </div>
