@@ -7,9 +7,6 @@ module.exports = {
         sans: ["Nunito", "sans-serif"],
         arabic: ["Noto Naskh Arabic", "serif"],
       },
-      letterSpacing: {
-        tighter: "0.98px",
-      },
     },
   },
   plugins: [],

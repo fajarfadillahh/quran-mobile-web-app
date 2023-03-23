@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="main">
+      <main className="main h-[3000px]">
         <Hero />
       </main>
     </>
