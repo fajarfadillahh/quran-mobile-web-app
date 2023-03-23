@@ -41,7 +41,7 @@ const SurahList = () => {
   return (
     <section className="section pt-12">
       <div className="container grid gap-8">
-        <form className="flex h-[56px] max-w-full items-center rounded-lg bg-white shadow-lg">
+        <form className="flex h-[56px] max-w-full items-center rounded-lg bg-white shadow-lg dark:bg-gray-800">
           <div className="inline-flex h-full min-w-[56px] items-center justify-center">
             <RiSearchLine className="text-[1.5rem] text-green-600" />
           </div>
@@ -49,7 +49,7 @@ const SurahList = () => {
             type="text"
             placeholder="Surah apa yang ingin kamu baca?"
             onChange={handleSearchSurah}
-            className="h-full w-full bg-transparent pr-6 font-bold text-gray-900 outline-none placeholder:font-semibold placeholder:text-gray-600"
+            className="h-full w-full bg-transparent pr-6 font-bold text-gray-900 outline-none placeholder:font-semibold placeholder:text-gray-600 dark:text-white dark:placeholder:text-gray-300"
           />
         </form>
 

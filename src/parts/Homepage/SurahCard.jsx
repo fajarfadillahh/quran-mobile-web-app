@@ -2,7 +2,7 @@ import React from "react";
 
 const SurahCard = ({ surah }) => {
   return (
-    <div className="flex min-h-[72px] items-center justify-between rounded-md bg-white p-4 shadow-lg transition hover:ring-2 hover:ring-green-600">
+    <div className="flex min-h-[72px] items-center justify-between rounded-md bg-white p-4 shadow-lg transition hover:ring-2 hover:ring-green-600 dark:bg-gray-800">
       <div className="inline-flex items-center gap-4">
         <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-[14px] font-bold text-white">
           {surah.nomor_surah}
@@ -21,7 +21,7 @@ const SurahCard = ({ surah }) => {
         </div>
       </div>
 
-      <h1 className="font-arabic text-[24px] font-bold text-gray-900">
+      <h1 className="font-arabic text-[24px] font-bold text-gray-900 dark:text-white">
         {surah.nama_surah}
       </h1>
     </div>

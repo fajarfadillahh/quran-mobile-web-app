@@ -4,10 +4,10 @@
     @apply pt-24 pb-16;
   }
   .section-title {
-    @apply font-bold text-gray-900;
+    @apply font-bold text-gray-900 dark:text-white;
   }
   .section-text {
-    @apply font-medium text-gray-600;
+    @apply font-medium text-gray-600 dark:text-white;
   }
 
   /* container class */
@@ -17,6 +17,6 @@
 
   /* main class */
   .main {
-    @apply mx-auto min-h-screen max-w-[480px] overflow-hidden bg-gray-100;
+    @apply mx-auto min-h-screen max-w-[480px] overflow-hidden bg-gray-100 dark:bg-gray-900;
   }
 }
