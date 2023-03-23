@@ -46,9 +46,19 @@ const Header = () => {
 
         <div
           className={`inline-flex cursor-pointer items-center gap-1 transition ${textColor}`}
+          onClick={() => setColorMode(colorMode === "light" ? "dark" : "light")}
         >
-          <RiMoonClearFill size="20px" />
-          <h3 className="text-[14px] font-bold">Dark Mode</h3>
+          {colorMode === "light" ? (
+            <>
+              <RiMoonClearFill size="20px" />
+              <h3 className="text-[14px] font-bold">Dark Mode</h3>
+            </>
+          ) : (
+            <>
+              <RiSunFill size="20px" />
+              <h3 className="text-[14px] font-bold">Light Mode</h3>
+            </>
+          )}
         </div>
       </div>
     </header>
