@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 mx-auto max-w-[430px] transition ${headerBgColor}`}
+      className={`fixed inset-x-0 top-0 z-50 mx-auto max-w-[480px] transition ${headerBgColor}`}
     >
       <div className="container flex h-24 items-center justify-between">
         <Link

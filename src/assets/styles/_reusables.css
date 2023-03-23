@@ -17,6 +17,6 @@
 
   /* main class */
   .main {
-    @apply mx-auto min-h-screen max-w-[430px] overflow-hidden bg-gray-100;
+    @apply mx-auto min-h-screen max-w-[480px] overflow-hidden bg-gray-100;
   }
 }
