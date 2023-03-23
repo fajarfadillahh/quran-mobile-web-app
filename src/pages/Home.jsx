@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="main h-[3000px]">
+      <main className="main">
         <Hero />
         <SurahList />
       </main>

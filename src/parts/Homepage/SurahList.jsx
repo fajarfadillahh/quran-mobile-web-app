@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
+
+// import api
+import { getAllSurah } from "../../api/Api";
 
 // import parts
 import SurahCard from "./SurahCard";
 
 const SurahList = () => {
+  const [surah, setSurah] = useState([]);
+
+  useEffect(() => {
+    getAllSurah()
+      .then((response) => {
+        setSurah(response);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
+  console.log(surah);
+
   return (
     <section className="section pt-12">
       <div className="container grid gap-8">
@@ -20,7 +37,9 @@ const SurahList = () => {
         </form>
 
         <div className="grid gap-4">
-          <SurahCard />
+          {surah?.map((surah, index) => {
+            return <SurahCard key={index} surah={surah} />;
+          })}
         </div>
       </div>
     </section>
