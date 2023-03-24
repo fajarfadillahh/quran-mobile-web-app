@@ -14,6 +14,8 @@ const SurahList = () => {
   const [searchSurah, setSearchSurah] = useState("");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     getAllSurah()
       .then((response) => {
         setSurah(response);
