@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 // import api
 import { getAllSurah } from "../../api/Api";
@@ -55,7 +56,11 @@ const SurahList = () => {
 
         <div className="grid gap-4">
           {filteredSurah?.map((surah, index) => {
-            return <SurahCard key={index} surah={surah} />;
+            return (
+              <Link to={`/surah/${surah.surah_number}`} key={index}>
+                <SurahCard surah={surah} />
+              </Link>
+            );
           })}
         </div>
       </div>

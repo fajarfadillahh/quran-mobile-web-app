@@ -21,13 +21,13 @@ const SurahList = () => {
       });
   }, [id]);
 
-  console.log(surah);
-
   return (
     <section className="section pt-12">
       <div className="container">
         <div className="grid justify-center gap-8">
-          <SurahAyat />
+          {surah?.map((surah, index) => {
+            return <SurahAyat key={index} surah={surah} />;
+          })}
         </div>
       </div>
     </section>
