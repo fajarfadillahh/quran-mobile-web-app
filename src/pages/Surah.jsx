@@ -5,6 +5,7 @@ import Header from "../components/Header";
 
 // import parts
 import Hero from "../parts/Surahpage/Hero";
+import SurahList from "../parts/Surahpage/SurahList";
 
 const Surah = () => {
   return (
@@ -12,6 +13,7 @@ const Surah = () => {
       <Header />
       <main className="main">
         <Hero />
+        <SurahList />
       </main>
     </>
   );
