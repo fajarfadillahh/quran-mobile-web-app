@@ -28,7 +28,9 @@ const SurahList = () => {
       searchSurah === ""
         ? surah
         : surah.filter((item) =>
-            item.nama_latin.toLowerCase().includes(searchSurah.toLowerCase())
+            item.transliteration
+              .toLowerCase()
+              .includes(searchSurah.toLowerCase())
           );
 
     setFilteredSurah(searched);
