@@ -10,4 +10,10 @@ const getAllSurah = async () => {
   return response.data.data;
 };
 
-export { getAllSurah };
+// get surah by id
+const getSurahById = async (id) => {
+  const response = await RESTSurah.get(`/surah?number=${id}`);
+  return response.data.data;
+};
+
+export { getAllSurah, getSurahById };
