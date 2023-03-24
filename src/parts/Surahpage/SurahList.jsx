@@ -12,6 +12,9 @@ const SurahList = () => {
   const [surah, setSurah] = useState([]);
 
   useEffect(() => {
+    // automatic to top
+    window.scrollTo(0, 0);
+
     getSurahById(id)
       .then((response) => {
         setSurah(response);
