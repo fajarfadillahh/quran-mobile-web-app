@@ -7,16 +7,18 @@ const SurahAyat = ({ surah }) => {
         <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-green-600 text-[14px] font-bold text-white">
           {surah.ayat_number}
         </span>
-        <h1 className="max-w-[330px] text-right text-[32px] font-bold text-gray-900">
+        <h1 className="max-w-[330px] text-right text-[32px] font-bold text-gray-900 dark:text-white">
           {surah.arabic}
         </h1>
       </div>
 
       <div className="grid gap-2">
-        <p className="text-[14px] font-semibold text-amber-600">
+        <p className="text-[14px] font-semibold text-amber-600 dark:text-amber-400">
           {surah.latin}
         </p>
-        <h3 className="font-bold text-gray-900">{surah.translation}</h3>
+        <h3 className="font-bold text-gray-900 dark:text-white">
+          {surah.translation}
+        </h3>
       </div>
     </div>
   );
