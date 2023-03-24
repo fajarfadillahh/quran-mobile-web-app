@@ -41,7 +41,7 @@ const SurahList = () => {
   return (
     <section className="section pt-12">
       <div className="container grid gap-8">
-        <form className="flex h-[56px] max-w-full items-center rounded-lg bg-white shadow-lg dark:bg-gray-800">
+        <form className="flex h-[56px] max-w-full items-center rounded-lg bg-white shadow-lg transition dark:bg-gray-800">
           <div className="inline-flex h-full min-w-[56px] items-center justify-center">
             <RiSearchLine className="text-[1.5rem] text-green-600" />
           </div>
