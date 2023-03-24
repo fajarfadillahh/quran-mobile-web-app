@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="section bg-gradient-to-tl from-green-600 to-green-500 pt-32">
       <div className="container">
-        <div className=" flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <h1 className="font-arabic text-[84px] font-bold text-white">
             الفاتحة
           </h1>
