@@ -24,8 +24,8 @@ const SurahList = () => {
   return (
     <section className="section pt-12">
       <div className="container">
-        <div className="grid justify-center gap-8">
-          {surah?.map((surah, index) => {
+        <div className="grid gap-8">
+          {surah.ayat?.map((surah, index) => {
             return <SurahAyat key={index} surah={surah} />;
           })}
         </div>
