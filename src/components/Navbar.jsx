@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaQuran, FaPray, FaStarAndCrescent } from "react-icons/fa";
+import { FaQuran, FaPrayingHands, FaStarAndCrescent } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -18,7 +18,7 @@ const Navbar = () => {
             to="/prayer"
             className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
           >
-            <FaPray size="1.5rem" />
+            <FaPrayingHands size="1.5rem" />
             <span className="text-[14px] font-extrabold">Prayer</span>
           </NavLink>
           <NavLink
