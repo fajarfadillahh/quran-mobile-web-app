@@ -9,21 +9,21 @@ const Navbar = () => {
         <ul className="flex items-center justify-around">
           <NavLink
             to="/"
-            className="inline-flex flex-col items-center gap-1 text-gray-600"
+            className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
           >
             <FaQuran size="1.5rem" />
             <span className="text-[14px] font-extrabold">Quran</span>
           </NavLink>
           <NavLink
             to="/prayer"
-            className="inline-flex flex-col items-center gap-1 text-gray-600"
+            className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
           >
             <FaPray size="1.5rem" />
             <span className="text-[14px] font-extrabold">Prayer</span>
           </NavLink>
           <NavLink
             to="/husna"
-            className="inline-flex flex-col items-center gap-1 text-gray-600"
+            className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
           >
             <FaStarAndCrescent size="1.5rem" />
             <span className="text-[14px] font-extrabold">Husna</span>

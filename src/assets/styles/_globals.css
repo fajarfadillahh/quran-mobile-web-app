@@ -1,0 +1,4 @@
+/* navbar.active */
+.navbar.active {
+  @apply text-green-600;
+}
