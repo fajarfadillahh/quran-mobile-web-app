@@ -59,7 +59,7 @@ const SurahList = () => {
         </form>
 
         <div className="grid gap-4">
-          {filteredSurah?.slice(0, 10).map((surah, index) => {
+          {filteredSurah?.map((surah, index) => {
             return (
               <Link to={`/surah/${surah.surah_number}`} key={index}>
                 <SurahCard surah={surah} />
