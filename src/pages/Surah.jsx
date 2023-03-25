@@ -2,6 +2,7 @@ import React from "react";
 
 // import components
 import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 // import ScrollToTop from "../components/ScrollToTop";
 
@@ -13,6 +14,7 @@ const Surah = () => {
     <>
       <Header />
       <main className="main">
+        <Navbar />
         <SurahList />
       </main>
       <Footer />
