@@ -1,4 +1,4 @@
 /* navbar.active */
-.navbar.active {
-  @apply text-green-600;
+.navbar-active.active {
+  @apply text-green-600 dark:text-green-600;
 }

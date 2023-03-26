@@ -4,33 +4,28 @@ import { FaQuran, FaPrayingHands, FaStarAndCrescent } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <section className="fixed inset-x-0 bottom-0 z-50 mx-auto flex h-[84px] max-w-[480px] items-center justify-center bg-white shadow-[0_-6px_15px_rgba(0,0,0,0.1)] dark:bg-gray-900">
+    <nav className="fixed inset-x-0 bottom-0 z-50 mx-auto flex h-[84px] max-w-[480px] items-center justify-center bg-white shadow-[0_-6px_15px_rgba(0,0,0,0.1)] transition dark:bg-gray-900">
       <div className="container">
         <ul className="flex items-center justify-around">
-          <NavLink
-            to="/"
-            className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
-          >
-            <FaQuran size="1.5rem" />
-            <span className="text-[14px] font-extrabold">Quran</span>
-          </NavLink>
-          <NavLink
-            to="/prayer"
-            className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
-          >
-            <FaPrayingHands size="1.5rem" />
-            <span className="text-[14px] font-extrabold">Prayer</span>
-          </NavLink>
-          <NavLink
-            to="/husna"
-            className="navbar inline-flex flex-col items-center gap-1 text-gray-600"
-          >
-            <FaStarAndCrescent size="1.5rem" />
-            <span className="text-[14px] font-extrabold">Husna</span>
-          </NavLink>
+          {[
+            [<FaQuran />, "Quran", "/"],
+            [<FaPrayingHands />, "Prayer", "/prayer"],
+            [<FaStarAndCrescent />, "Husna", "/husna"],
+          ].map(([icon, text, link]) => {
+            return (
+              <NavLink
+                to={link}
+                key={text}
+                className="navbar-active inline-flex flex-col items-center gap-1 text-gray-600 dark:text-gray-500"
+              >
+                <span className="text-[1.5rem]">{icon}</span>
+                <p className="text-[14px] font-extrabold">{text}</p>
+              </NavLink>
+            );
+          })}
         </ul>
       </div>
-    </section>
+    </nav>
   );
 };
 
