@@ -4,7 +4,6 @@ import React from "react";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-// import ScrollToTop from "../components/ScrollToTop";
 
 // import parts
 import SurahList from "../parts/Surahpage/SurahList";
@@ -18,7 +17,6 @@ const Surah = () => {
         <SurahList />
       </main>
       <Footer />
-      {/* <ScrollToTop /> */}
     </>
   );
 };
