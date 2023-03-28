@@ -21,7 +21,7 @@ const ScrollToTop = () => {
 
   const handleScrollVisible = () => {
     if (window.scrollY > 400) {
-      setScrollVisible("bottom-12");
+      setScrollVisible("bottom-24");
     } else {
       setScrollVisible("-bottom-full");
     }
@@ -29,7 +29,7 @@ const ScrollToTop = () => {
 
   return (
     <div
-      className={`fixed right-6 z-50 cursor-pointer rounded-md bg-green-600 p-3 text-[1.3rem] text-white shadow-md transition-all duration-300 ${scrollVisible}`}
+      className={`fixed right-6 z-10 flex h-[36px] w-[36px] cursor-pointer items-center justify-center rounded-md bg-green-600 text-[1rem] text-white shadow-md transition-all duration-300 ${scrollVisible}`}
       onClick={handleScrollToTop}
     >
       <RiArrowUpLine />
