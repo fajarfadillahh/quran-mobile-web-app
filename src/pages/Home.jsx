@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <Hero />
+        <Hero dataQuote={quote} />
         <SurahList dataSurah={surah} />
       </Layout>
     </>
