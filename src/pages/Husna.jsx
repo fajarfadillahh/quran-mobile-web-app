@@ -12,13 +12,19 @@ const Husna = () => {
   const [asmaulHusna, setAsmaulHusna] = useState([]);
 
   useEffect(() => {
-    getAsmaulHusna();
+    getAsmaulHusna()
+      .then((result) => {
+        setAsmaulHusna(result);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
 
   return (
     <Layout>
       <Hero />
-      <HusnaList />
+      <HusnaList asmaulHusna={asmaulHusna} />
     </Layout>
   );
 };
