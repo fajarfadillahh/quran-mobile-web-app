@@ -16,4 +16,10 @@ const getSurahById = async (id) => {
   return response.data.data;
 };
 
-export { getAllSurah, getSurahById };
+// get quote
+const getQuote = async () => {
+  const response = await RESTSurah.get(`/quote`);
+  return response.data.data;
+};
+
+export { getAllSurah, getSurahById, getQuote };
