@@ -12,6 +12,8 @@ const Husna = () => {
   const [asmaulHusna, setAsmaulHusna] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     getAsmaulHusna()
       .then((result) => {
         setAsmaulHusna(result);
