@@ -28,7 +28,7 @@ const Surah = () => {
   return (
     <>
       <Layout>
-        <Hero />
+        <Hero dataSurah={surah} />
         <SurahList dataSurah={surah} />
       </Layout>
     </>
