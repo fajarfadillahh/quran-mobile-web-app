@@ -10,7 +10,7 @@ const Navbar = () => {
           {[
             [<FaQuran />, "Quran", "/"],
             [<FaPrayingHands />, "Prayer", "/prayer"],
-            [<FaStarAndCrescent />, "Husna", "/husna"],
+            [<FaStarAndCrescent />, "Husna", "/asmaul-husna"],
           ].map(([icon, text, link]) => {
             return (
               <NavLink
