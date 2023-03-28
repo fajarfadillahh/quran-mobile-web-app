@@ -10,10 +10,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="main">{children}</main>
-      <Navbar />
+      <main className="main">
+        {children}
+        <Navbar />
+        <ScrollToTop />
+      </main>
       <Footer />
-      <ScrollToTop />
     </>
   );
 };
