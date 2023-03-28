@@ -2,45 +2,27 @@ import React, { useEffect, useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-// import api
-import { getAllSurah } from "../../api/Api";
-
 // import parts
 import SurahCard from "./SurahCard";
 
-const SurahList = () => {
-  const [surah, setSurah] = useState([]);
+const SurahList = ({ dataSurah }) => {
   const [filteredSurah, setFilteredSurah] = useState([]);
   const [searchSurah, setSearchSurah] = useState("");
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
-    getAllSurah()
-      .then((response) => {
-        setSurah(response);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
-
-  useEffect(() => {
     const searched =
       searchSurah === ""
-        ? surah
-        : surah.filter((item) =>
-            item.transliteration
-              .toLowerCase()
-              .includes(searchSurah.toLowerCase())
+        ? dataSurah
+        : dataSurah.filter((item) =>
+            item.transliteration.toLowerCase().includes(searchSurah)
           );
 
     setFilteredSurah(searched);
-  }, [surah, searchSurah]);
+  }, [dataSurah, searchSurah]);
 
   // handle search surah by name
   const handleSearchSurah = (event) => {
-    setSearchSurah(event.target.value);
+    setSearchSurah(event.target.value.toLowerCase());
   };
 
   return (
