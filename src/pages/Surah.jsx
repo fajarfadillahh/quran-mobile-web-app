@@ -7,16 +7,14 @@ import Footer from "../components/Footer";
 
 // import parts
 import SurahList from "../parts/Surahpage/SurahList";
+import Layout from "../components/Layout";
 
 const Surah = () => {
   return (
     <>
-      <Header />
-      <main className="main">
-        <Navbar />
+      <Layout>
         <SurahList />
-      </main>
-      <Footer />
+      </Layout>
     </>
   );
 };
