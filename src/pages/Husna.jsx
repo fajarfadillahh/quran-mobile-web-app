@@ -1,7 +1,15 @@
 import React from "react";
 
+// import components
+import Layout from "../components/Layout";
+import Hero from "../parts/Husnapage/Hero";
+
 const Husna = () => {
-  return <div>Asmaul Husna page</div>;
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
 };
 
 export default Husna;
