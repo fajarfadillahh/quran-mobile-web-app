@@ -11,7 +11,10 @@ const HusnaCard = ({ asmaulHusna }) => {
         </span>
 
         <div className="grid gap-2 text-center">
-          <h1 className="truncate text-[28px] font-bold text-gray-900">
+          <h1
+            dir="rtl"
+            className="truncate text-[28px] font-bold text-gray-900 rtl:mr-0"
+          >
             {arabic}
           </h1>
 
@@ -19,7 +22,9 @@ const HusnaCard = ({ asmaulHusna }) => {
             <h3 className="truncate whitespace-nowrap text-[14px] font-extrabold text-green-600">
               {latin}
             </h3>
-            <p className="text-[12px] text-gray-600">{id_translation}</p>
+            <p className="husna-block-ellipsis text-[12px] text-gray-600">
+              {id_translation}
+            </p>
           </div>
         </div>
       </div>
