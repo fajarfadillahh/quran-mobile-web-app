@@ -1,13 +1,11 @@
 import React from "react";
 
-import HeroImg from "../../assets/images/husna-hero-img.svg";
-
 const Hero = () => {
   return (
     <section className="bg-gradient-to-tl from-green-600 to-green-500 pt-32 pb-12">
       <div className="container flex flex-col items-center justify-center">
         <img
-          src={HeroImg}
+          src="/images/husna-hero-img.svg"
           alt="hero img"
           className="mb-5 h-[130px] w-[130px]"
         />
