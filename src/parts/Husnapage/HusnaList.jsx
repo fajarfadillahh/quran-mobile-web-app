@@ -8,7 +8,7 @@ const HusnaList = ({ asmaulHusna }) => {
     <section className="section pt-12">
       <div className="container grid grid-cols-[repeat(2,max-content)] justify-center gap-8">
         {asmaulHusna?.map((husna) => {
-          return <HusnaCard key={husna.number} asmaulHusna={husna} />;
+          return <HusnaCard key={husna.number} husna={husna} />;
         })}
       </div>
     </section>
