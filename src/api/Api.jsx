@@ -22,10 +22,16 @@ const getQuote = async () => {
   return response.data.data;
 };
 
+// get daiily prayer
+const getDailyPrayer = async () => {
+  const response = await URL.get(`/doaharian`);
+  return response.data.data;
+};
+
 // get asmaul-husna
 const getAsmaulHusna = async () => {
   const response = await URL.get(`/asmaulhusna`);
   return response.data.data;
 };
 
-export { getAllSurah, getSurahById, getQuote, getAsmaulHusna };
+export { getAllSurah, getSurahById, getQuote, getDailyPrayer, getAsmaulHusna };
