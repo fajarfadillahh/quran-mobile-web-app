@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const URL = axios.create({
-  baseURL: "http://apimuslimify.vercel.app/api/v2",
+  baseURL: "https://apimuslimify.vercel.app/api/v2",
 });
 
 // get all surah
