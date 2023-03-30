@@ -12,6 +12,8 @@ const Prayer = () => {
   const [dailyPrayer, setDailyPrayer] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     getDailyPrayer()
       .then((result) => {
         setDailyPrayer(result);
