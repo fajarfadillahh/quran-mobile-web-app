@@ -1,12 +1,13 @@
 import React from "react";
 
+// import components
+import PrayerAccordion from "./PrayerAccordion";
+
 const PrayerList = () => {
   return (
     <section className="section pt-12">
       <div className="container grid gap-4">
-        <h3>prayer accordion</h3>
-        <h3>prayer accordion</h3>
-        <h3>prayer accordion</h3>
+        <PrayerAccordion />
       </div>
     </section>
   );
