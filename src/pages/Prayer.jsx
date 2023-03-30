@@ -12,14 +12,20 @@ const Prayer = () => {
   const [dailyPrayer, setDailyPrayer] = useState([]);
 
   useEffect(() => {
-    getDailyPrayer();
+    getDailyPrayer()
+      .then((result) => {
+        setDailyPrayer(result);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
 
   return (
     <>
       <Layout>
         <Hero />
-        <PrayerList />
+        <PrayerList dataPrayer={dailyPrayer} />
       </Layout>
     </>
   );
